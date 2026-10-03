@@ -22,34 +22,45 @@
 .btn, .btn-multi {
     background: linear-gradient(
         180deg,
-        rgba(5, 25, 90, 0.95),
-        rgba(0, 8, 45, 0.95)
+        rgba(0, 35, 120, 0.95),
+        rgba(0, 10, 55, 0.98)
     ) !important;
 
-    border: 3px solid #008cff !important;
-    border-radius: 8px !important;
+    border: 3px solid #00bfff !important;
+    border-radius: 0 !important;
+
+    clip-path: polygon(
+        12px 0,
+        calc(100% - 12px) 0,
+        100% 12px,
+        100% calc(100% - 12px),
+        calc(100% - 12px) 100%,
+        12px 100%,
+        0 calc(100% - 12px),
+        0 12px
+    ) !important;
 
     color: #ffffff !important;
 
-    padding: 8px 18px !important;
+    padding: 9px 18px !important;
     font-size: 27px !important;
     font-weight: bold !important;
 
     text-shadow:
-        0 0 6px #ffffff,
-        0 0 12px #00aaff !important;
+        0 0 5px #ffffff,
+        0 0 12px #00bfff !important;
 
     box-shadow:
-        0 0 8px #008cff,
-        0 0 18px rgba(0, 140, 255, 0.7),
-        inset 0 0 12px rgba(0, 100, 255, 0.4) !important;
+        0 0 8px #00bfff,
+        0 0 18px rgba(0, 190, 255, 0.65),
+        inset 0 0 12px rgba(0, 120, 255, 0.45) !important;
 
     display: block !important;
-    width: 210px !important;
+    width: 230px !important;
     text-align: center !important;
     margin: 8px auto !important;
 
-    transform: translateY(-20px);
+    transform: translateY(-45px);
     transition: all 0.3s ease;
 }
 .btn:hover, .btn-multi:hover {
