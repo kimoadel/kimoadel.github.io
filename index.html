@@ -20,9 +20,15 @@
       background-color: transparent !important;
   }
 .btn, .btn-multi {
-    background: rgba(0, 120, 255, 0.45) !important;
-    border: 2px solid #00d9ff !important;
-    border-radius: 25px !important;
+    background: linear-gradient(
+        180deg,
+        rgba(5, 25, 90, 0.95),
+        rgba(0, 8, 45, 0.95)
+    ) !important;
+
+    border: 3px solid #008cff !important;
+    border-radius: 8px !important;
+
     color: #ffffff !important;
 
     padding: 8px 18px !important;
@@ -30,23 +36,22 @@
     font-weight: bold !important;
 
     text-shadow:
-        0 0 8px #ffffff,
-        0 0 15px #00d9ff !important;
+        0 0 6px #ffffff,
+        0 0 12px #00aaff !important;
 
     box-shadow:
-        0 0 10px #00d9ff,
-        0 0 25px rgba(0, 217, 255, 0.8),
-        inset 0 0 12px rgba(0, 217, 255, 0.5) !important;
+        0 0 8px #008cff,
+        0 0 18px rgba(0, 140, 255, 0.7),
+        inset 0 0 12px rgba(0, 100, 255, 0.4) !important;
 
     display: block !important;
     width: 210px !important;
     text-align: center !important;
     margin: 8px auto !important;
 
-    transform: translateY(-45px);
+    transform: translateY(-20px);
     transition: all 0.3s ease;
 }
-
 .btn:hover, .btn-multi:hover {
     background: rgba(0, 180, 255, 0.7) !important;
     box-shadow:
