@@ -20,8 +20,8 @@
       background-color: transparent !important;
   }
 .btn, .btn-multi {
-    background: rgba(0, 20, 120, 0.75) !important;
-    border: 2px solid #0066ff !important;
+    background: rgba(0, 120, 255, 0.45) !important;
+    border: 2px solid #00d9ff !important;
     border-radius: 25px !important;
     color: #ffffff !important;
 
@@ -31,20 +31,28 @@
 
     text-shadow:
         0 0 8px #ffffff,
-        0 0 15px #008cff !important;
+        0 0 15px #00d9ff !important;
 
     box-shadow:
-        0 0 15px #0066ff,
-        inset 0 0 10px rgba(0, 100, 255, 0.6) !important;
+        0 0 10px #00d9ff,
+        0 0 25px rgba(0, 217, 255, 0.8),
+        inset 0 0 12px rgba(0, 217, 255, 0.5) !important;
 
     display: block !important;
     width: 210px !important;
     text-align: center !important;
-
     margin: 8px auto !important;
 
-    transform: translateY(-45px);
+    transform: translateY(-20px);
     transition: all 0.3s ease;
+}
+
+.btn:hover, .btn-multi:hover {
+    background: rgba(0, 180, 255, 0.7) !important;
+    box-shadow:
+        0 0 15px #00d9ff,
+        0 0 35px #00d9ff,
+        inset 0 0 15px rgba(0, 217, 255, 0.7) !important;
 }
 .btn:hover, .btn-multi:hover {
     background: rgba(0, 217, 255, 0.5) !important;
